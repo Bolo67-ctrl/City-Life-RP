@@ -38,8 +38,7 @@ requestJob.OnServerEvent:Connect(function(player, jobName)
     cooldowns[player] = now
     cash.Value += jobs[jobName].pay
 
-    print(player.Name .. " worked as " .. jobName)
-        .. " and earned $" .. jobs[jobName].pay
+    print(player.Name .. " worked as " .. jobName .. " and earned $" .. jobs[jobName].pay)
 end)
 
 Players.PlayerRemoving:Connect(function(player)
